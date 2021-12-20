@@ -45,7 +45,7 @@ app.post("/generate", async (req, res) => {
     }
 
     const fileName = `${getRandomFileName()}.jpg`;
-    const filePath = `.${folder}/${fileName}`;
+    const filePath = `${folder}/${fileName}`;
 
     const imageStream = await new Promise((resolve, reject) => {
       ffmpeg(url)
