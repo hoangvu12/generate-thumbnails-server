@@ -1,7 +1,7 @@
 const ffmpeg = require("fluent-ffmpeg");
 const express = require("express");
 const fs = require("fs");
-const { randomIntFromInterval } = require("./utils");
+const { randomIntFromInterval, getRandomFileName } = require("./utils");
 const app = express();
 
 app.use(express.json());
